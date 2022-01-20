@@ -1,0 +1,189 @@
+html {
+  /* principal */
+  --cor-principal: #ff7f50;
+  --cor-principal-2: #ff9090;
+  --cor-principal-3: #ffc5c5;
+  --cor-principal-4: #ffe7e7;
+  --cor-principal-5: #fdf1f1;
+
+  /* secundaria */
+  --cor-secundaria-1: #a1d7ff;
+  --cor-secundaria-2: #d8eeff;
+  --cor-secundaria-3: #f2f9ff;
+
+  /* tons de cinza */
+  --grey-1: #10111b;
+  --grey-2: #393a41;
+  --grey-3: #5a5c64;
+  --grey-4: #80808a;
+  --grey-5: #c2c2c9;
+  --grey-6: #f0f0f2;
+  --grey-7: #fff;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.sublinhado {
+  border-bottom: var(--grey-3) solid 6px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--grey-5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grey-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* navbar */
+.navbar {
+  background-color: #000;
+}
+
+.navbar .menuItem {
+  font-family: "Poppins", sans-serif;
+  margin: 0px 30px 0px 30px;
+  color: var(--grey-6);
+}
+
+.navbar .menuItem:hover {
+  color: var(--cor-principal-2);
+  transition-duration: 0.5s;
+}
+
+.navbar red:hover {
+  color: var(--grey-2);
+  transition-duration: 0.5s;
+}
+
+/* banner section */
+.banner {
+  background-image: url("public/img/bailarina.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey-6);
+}
+
+.subHeading {
+  font-family: "Lato", sans-serif;
+  color: var(--grey-2);
+}
+
+.banner .buttonPrincipal {
+  border-radius: 5px;
+  background-color: var(--cor-principal-2);
+  color: var(--grey-7);
+  padding: 10px 30px 10px 30px;
+  -webkit-box-shadow: -2px 5px 15px 5px rgba(229, 99, 99, 0.31);
+  box-shadow: -2px 5px 15px 5px rgba(229, 99, 99, 0.31);
+}
+
+.banner .buttonPrincipal:hover {
+  color: var(--cor-principal-2);
+  background-color: var(--grey-7);
+  border: 1px solid var(--cor-principal-2);
+}
+
+.banner .fraseHead {
+  margin-top: 35vh;
+}
+
+/* missao section */
+
+#mission {
+  min-height: 80vh;
+  align-items: center;
+}
+
+#mission h3 {
+  color: var(--grey-3);
+  padding-bottom: 20px;
+}
+
+/* teachers section */
+#teachers {
+  min-height: 100vh;
+}
+
+#teachers h3 {
+  color: var(--grey-3);
+  padding-bottom: 20px;
+}
+
+#teachers .profImg {
+  border-radius: 100%;
+  object-fit: cover;
+  vertical-align: auto;
+}
+
+/* contact section */
+#contact h3 {
+  color: var(--grey-3);
+  padding-bottom: 20px;
+}
+
+#contact input:focus {
+  border-color: #d95edb;
+  box-shadow: 0 0 0 0.25rem rgb(198 47 103 / 21%);
+}
+
+#contact textarea:focus {
+  border-color: #d95edb;
+  box-shadow: 0 0 0 0.25rem rgb(198 47 103 / 21%);
+}
+
+#contact .btn-send {
+  display: flex;
+  margin-left: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: var(--cor-principal-2);
+  color: var(--grey-7);
+  padding: 10px 30px 10px 30px;
+}
+
+#contact .btn-send:hover {
+  color: var(--cor-principal-2);
+  background-color: var(--grey-7);
+  border: 1px solid var(--cor-principal-2);
+}
+
+/* Mobile */
+@media screen and (max-width: 680px) {
+  .banner {
+    background-image: url("public/img/bailarinaMobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .form-control{
+    margin-bottom: 10px;
+  }
+  .container{
+    padding: 20px !important;
+  }
+  .navbar{
+    display: none;
+  }
+}
